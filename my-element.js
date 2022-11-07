@@ -59,7 +59,8 @@ export class MyElement extends LitElement {
 
   _onClick() {
     this.count++;
-    this.dispatchEvent(new CustomEvent('count-changed'));
+    // seems not necessary ?
+    // this.dispatchEvent(new CustomEvent('count-changed'));
   }
 
   /**
